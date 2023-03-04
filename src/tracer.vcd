@@ -1,0 +1,114 @@
+$date
+	Sat Mar  4 21:26:30 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module Tracer_tb $end
+$var reg 1 ! clock $end
+$var reg 1 " io_rvfiBool_0 $end
+$var reg 2 # io_rvfiMode [1:0] $end
+$var reg 5 $ io_rvfiRegAddr_0 [4:0] $end
+$var reg 5 % io_rvfiRegAddr_1 [4:0] $end
+$var reg 5 & io_rvfiRegAddr_2 [4:0] $end
+$var reg 32 ' io_rvfiSInt_0 [31:0] $end
+$var reg 32 ( io_rvfiSInt_1 [31:0] $end
+$var reg 32 ) io_rvfiSInt_2 [31:0] $end
+$var reg 32 * io_rvfiSInt_3 [31:0] $end
+$var reg 32 + io_rvfiSInt_4 [31:0] $end
+$var reg 32 , io_rvfiUInt_0 [31:0] $end
+$var reg 32 - io_rvfiUInt_1 [31:0] $end
+$var reg 32 . io_rvfiUInt_2 [31:0] $end
+$var reg 32 / io_rvfiUInt_3 [31:0] $end
+$var reg 1 0 reset $end
+$scope module uut $end
+$var wire 1 1 _T_3 $end
+$var wire 1 ! clock $end
+$var wire 1 " io_rvfiBool_0 $end
+$var wire 2 2 io_rvfiMode [1:0] $end
+$var wire 5 3 io_rvfiRegAddr_0 [4:0] $end
+$var wire 5 4 io_rvfiRegAddr_1 [4:0] $end
+$var wire 5 5 io_rvfiRegAddr_2 [4:0] $end
+$var wire 32 6 io_rvfiSInt_0 [31:0] $end
+$var wire 32 7 io_rvfiSInt_1 [31:0] $end
+$var wire 32 8 io_rvfiSInt_2 [31:0] $end
+$var wire 32 9 io_rvfiSInt_3 [31:0] $end
+$var wire 32 : io_rvfiSInt_4 [31:0] $end
+$var wire 32 ; io_rvfiUInt_0 [31:0] $end
+$var wire 32 < io_rvfiUInt_1 [31:0] $end
+$var wire 32 = io_rvfiUInt_2 [31:0] $end
+$var wire 32 > io_rvfiUInt_3 [31:0] $end
+$var wire 1 0 reset $end
+$var wire 32 ? _T_1 [31:0] $end
+$var reg 32 @ clkCycle [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+bx @
+bx ?
+b10110001111100000101011001100011 >
+b10000100100001001101011000001001 =
+b11000000100010010101111010000001 <
+b10010000101010011010100100100 ;
+b111100111110001100000001 :
+b10001001001101110101001000010010 9
+b10110010110000101000010001100101 8
+b1000110110111111001100110001101 7
+b110101110010111101100001101 6
+b1101 5
+b11101 4
+b10110 3
+b0 2
+11
+10
+b10110001111100000101011001100011 /
+b10000100100001001101011000001001 .
+b11000000100010010101111010000001 -
+b10010000101010011010100100100 ,
+b111100111110001100000001 +
+b10001001001101110101001000010010 *
+b10110010110000101000010001100101 )
+b1000110110111111001100110001101 (
+b110101110010111101100001101 '
+b1101 &
+b11101 %
+b10110 $
+b0 #
+1"
+0!
+$end
+#10
+b1 &
+b1 5
+b1 %
+b1 4
+b1 $
+b1 3
+b1 +
+b1 :
+b1 *
+b1 9
+b1 )
+b1 8
+b1 (
+b1 7
+b1 '
+b1 6
+b1 /
+b1 >
+b1 .
+b1 =
+b1 -
+b1 <
+b1 ,
+b1 ;
+#110
+00

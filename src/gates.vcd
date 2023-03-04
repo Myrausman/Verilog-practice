@@ -1,0 +1,79 @@
+$date
+	Sat Mar  4 21:55:02 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module gates_tb $end
+$var wire 1 ! z $end
+$var wire 1 " y $end
+$var wire 1 # x $end
+$var reg 1 $ a $end
+$var reg 1 % b $end
+$scope module dut $end
+$var wire 1 $ a $end
+$var wire 1 % b $end
+$var wire 1 # x $end
+$var wire 1 " y $end
+$var wire 1 ! z $end
+$upscope $end
+$scope begin $ivl_for_loop0 $end
+$var integer 32 & i [31:0] $end
+$scope begin $ivl_for_loop1 $end
+$var integer 32 ' j [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+bx '
+bx &
+x%
+x$
+x#
+x"
+x!
+$end
+#5
+0#
+0$
+#10
+0"
+0!
+b0 '
+b0 &
+0%
+#70
+b1 '
+#80
+1"
+1!
+1$
+#130
+b1 &
+b0 '
+#140
+0"
+0!
+0$
+#150
+1"
+1!
+1%
+#190
+b1 '
+#200
+1#
+0"
+1$
+#250
+b10 &
+b10 '
+#255

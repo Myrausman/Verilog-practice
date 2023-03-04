@@ -7,38 +7,50 @@
 :vpi_module "/usr/local/lib/ivl/vhdl_textio.vpi";
 :vpi_module "/usr/local/lib/ivl/v2005_math.vpi";
 :vpi_module "/usr/local/lib/ivl/va_math.vpi";
-S_0x55a727992060 .scope module, "andd_tb" "andd_tb" 2 2;
+S_0x563768b29b60 .scope module, "andd_tb" "andd_tb" 2 2;
  .timescale 0 0;
-v0x55a7279a2b70_0 .var "a", 0 0;
-v0x55a7279a2c40_0 .var "b", 0 0;
-v0x55a7279a2d10_0 .net "y", 0 0, L_0x55a7279a2e10;  1 drivers
-S_0x55a7279921f0 .scope module, "uut" "andd" 2 9, 3 1 0, S_0x55a727992060;
+v0x563768b3d530_0 .var "a", 0 0;
+v0x563768b3d5f0_0 .var "b", 0 0;
+v0x563768b3d690_0 .net "x", 0 0, L_0x563768b3d920;  1 drivers
+v0x563768b3d760_0 .net "y", 0 0, L_0x563768b3da80;  1 drivers
+v0x563768b3d830_0 .net "z", 0 0, L_0x563768b3db40;  1 drivers
+S_0x563768b29cf0 .scope module, "uut" "andd" 2 11, 3 1 0, S_0x563768b29b60;
  .timescale 0 0;
     .port_info 0 /INPUT 1 "a";
     .port_info 1 /INPUT 1 "b";
-    .port_info 2 /OUTPUT 1 "y";
-L_0x55a7279a2e10 .functor AND 1, v0x55a7279a2b70_0, v0x55a7279a2c40_0, C4<1>, C4<1>;
-v0x55a727959d80_0 .net "a", 0 0, v0x55a7279a2b70_0;  1 drivers
-v0x55a7279a2990_0 .net "b", 0 0, v0x55a7279a2c40_0;  1 drivers
-v0x55a7279a2a50_0 .net "y", 0 0, L_0x55a7279a2e10;  alias, 1 drivers
-    .scope S_0x55a727992060;
+    .port_info 2 /OUTPUT 1 "x";
+    .port_info 3 /OUTPUT 1 "y";
+    .port_info 4 /OUTPUT 1 "z";
+L_0x563768b3d920 .functor AND 1, v0x563768b3d530_0, v0x563768b3d5f0_0, C4<1>, C4<1>;
+L_0x563768b3da80 .functor XOR 1, v0x563768b3d530_0, v0x563768b3d5f0_0, C4<0>, C4<0>;
+L_0x563768b3db40 .functor OR 1, v0x563768b3d530_0, v0x563768b3d5f0_0, C4<0>, C4<0>;
+v0x563768b29ed0_0 .net "a", 0 0, v0x563768b3d530_0;  1 drivers
+v0x563768b3d160_0 .net "b", 0 0, v0x563768b3d5f0_0;  1 drivers
+v0x563768b3d220_0 .net "x", 0 0, L_0x563768b3d920;  alias, 1 drivers
+v0x563768b3d2c0_0 .net "y", 0 0, L_0x563768b3da80;  alias, 1 drivers
+v0x563768b3d380_0 .net "z", 0 0, L_0x563768b3db40;  alias, 1 drivers
+    .scope S_0x563768b29b60;
 T_0 ;
     %pushi/vec4 0, 0, 1;
-    %store/vec4 v0x55a7279a2b70_0, 0, 1;
+    %store/vec4 v0x563768b3d530_0, 0, 1;
     %pushi/vec4 0, 0, 1;
-    %store/vec4 v0x55a7279a2c40_0, 0, 1;
+    %store/vec4 v0x563768b3d5f0_0, 0, 1;
     %end;
     .thread T_0;
-    .scope S_0x55a727992060;
+    .scope S_0x563768b29b60;
 T_1 ;
     %delay 5, 0;
     %pushi/vec4 0, 0, 1;
-    %store/vec4 v0x55a7279a2b70_0, 0, 1;
+    %store/vec4 v0x563768b3d530_0, 0, 1;
     %delay 5, 0;
     %pushi/vec4 1, 0, 1;
-    %store/vec4 v0x55a7279a2c40_0, 0, 1;
+    %store/vec4 v0x563768b3d5f0_0, 0, 1;
     %delay 5, 0;
-    %vpi_call 2 21 "$display", "a = %b, b = %b, y = %b", v0x55a7279a2b70_0, v0x55a7279a2c40_0, v0x55a7279a2d10_0 {0 0 0};
+    %vpi_call 2 23 "$display", "AND TEST \012 a = %b, b = %b, x = %b", v0x563768b3d530_0, v0x563768b3d5f0_0, v0x563768b3d690_0 {0 0 0};
+    %delay 5, 0;
+    %vpi_call 2 24 "$display", "XOR TEST \012 a = %b, b = %b, y = %b", v0x563768b3d530_0, v0x563768b3d5f0_0, v0x563768b3d760_0 {0 0 0};
+    %delay 5, 0;
+    %vpi_call 2 25 "$display", "OR TEST \012 a = %b, b = %b, z = %b", v0x563768b3d530_0, v0x563768b3d5f0_0, v0x563768b3d830_0 {0 0 0};
     %end;
     .thread T_1;
 # The file index is used to find the file name in the following table.
