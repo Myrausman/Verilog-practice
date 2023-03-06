@@ -32,6 +32,8 @@ module Tracer_tb;
   end
 
   initial begin
+    $dumpfile("tracer.vcd");
+    $dumpvars(0, Tracer_tb);
     reset = 1;
     io_rvfiUInt_0 = 0;
     io_rvfiUInt_1 = 0;
