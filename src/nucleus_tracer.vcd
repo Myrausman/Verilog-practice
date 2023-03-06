@@ -1,0 +1,292 @@
+$date
+	Mon Mar  6 12:38:54 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module nucleus_tracer_tb $end
+$var wire 32 ! io_pin [31:0] $end
+$var reg 1 " clock $end
+$var reg 1 # reset $end
+$scope module dut $end
+$var wire 1 $ Tracer_clock $end
+$var wire 1 % Tracer_io_rvfiBool_0 $end
+$var wire 5 & Tracer_io_rvfiRegAddr_0 [4:0] $end
+$var wire 5 ' Tracer_io_rvfiRegAddr_1 [4:0] $end
+$var wire 5 ( Tracer_io_rvfiRegAddr_2 [4:0] $end
+$var wire 32 ) Tracer_io_rvfiSInt_0 [31:0] $end
+$var wire 32 * Tracer_io_rvfiSInt_1 [31:0] $end
+$var wire 32 + Tracer_io_rvfiSInt_2 [31:0] $end
+$var wire 32 , Tracer_io_rvfiSInt_3 [31:0] $end
+$var wire 32 - Tracer_io_rvfiSInt_4 [31:0] $end
+$var wire 32 . Tracer_io_rvfiUInt_0 [31:0] $end
+$var wire 32 / Tracer_io_rvfiUInt_1 [31:0] $end
+$var wire 32 0 Tracer_io_rvfiUInt_2 [31:0] $end
+$var wire 32 1 Tracer_io_rvfiUInt_3 [31:0] $end
+$var wire 1 2 Tracer_reset $end
+$var wire 1 " clock $end
+$var wire 1 3 core_clock $end
+$var wire 4 4 core_io_dmemReq_bits_activeByteLane [3:0] $end
+$var wire 32 5 core_io_dmemReq_bits_addrRequest [31:0] $end
+$var wire 32 6 core_io_dmemReq_bits_dataRequest [31:0] $end
+$var wire 1 7 core_io_dmemReq_bits_isWrite $end
+$var wire 1 8 core_io_dmemReq_valid $end
+$var wire 32 9 core_io_dmemRsp_bits_dataResponse [31:0] $end
+$var wire 1 : core_io_dmemRsp_valid $end
+$var wire 32 ; core_io_imemReq_bits_addrRequest [31:0] $end
+$var wire 1 < core_io_imemReq_valid $end
+$var wire 32 = core_io_imemRsp_bits_dataResponse [31:0] $end
+$var wire 1 > core_io_imemRsp_valid $end
+$var wire 32 ? core_io_pin [31:0] $end
+$var wire 1 @ core_io_rvfiBool_0 $end
+$var wire 5 A core_io_rvfiRegAddr_0 [4:0] $end
+$var wire 5 B core_io_rvfiRegAddr_1 [4:0] $end
+$var wire 5 C core_io_rvfiRegAddr_2 [4:0] $end
+$var wire 32 D core_io_rvfiSInt_0 [31:0] $end
+$var wire 32 E core_io_rvfiSInt_1 [31:0] $end
+$var wire 32 F core_io_rvfiSInt_2 [31:0] $end
+$var wire 32 G core_io_rvfiSInt_3 [31:0] $end
+$var wire 32 H core_io_rvfiSInt_4 [31:0] $end
+$var wire 32 I core_io_rvfiUInt_0 [31:0] $end
+$var wire 32 J core_io_rvfiUInt_1 [31:0] $end
+$var wire 32 K core_io_rvfiUInt_2 [31:0] $end
+$var wire 32 L core_io_rvfiUInt_3 [31:0] $end
+$var wire 1 M core_reset $end
+$var wire 1 N dmem_clock $end
+$var wire 4 O dmem_io_req_bits_activeByteLane [3:0] $end
+$var wire 32 P dmem_io_req_bits_addrRequest [31:0] $end
+$var wire 32 Q dmem_io_req_bits_dataRequest [31:0] $end
+$var wire 1 R dmem_io_req_bits_isWrite $end
+$var wire 1 S dmem_io_req_valid $end
+$var wire 32 T dmem_io_rsp_bits_dataResponse [31:0] $end
+$var wire 1 U dmem_io_rsp_valid $end
+$var wire 1 V dmem_reset $end
+$var wire 1 W imem_clock $end
+$var wire 32 X imem_io_req_bits_addrRequest [31:0] $end
+$var wire 1 Y imem_io_req_valid $end
+$var wire 32 Z imem_io_rsp_bits_dataResponse [31:0] $end
+$var wire 1 [ imem_io_rsp_valid $end
+$var wire 1 \ imem_reset $end
+$var wire 32 ] io_pin [31:0] $end
+$var wire 1 # reset $end
+$scope module Tracer $end
+$var wire 1 ^ _T_3 $end
+$var wire 1 $ clock $end
+$var wire 1 % io_rvfiBool_0 $end
+$var wire 2 _ io_rvfiMode [1:0] $end
+$var wire 5 ` io_rvfiRegAddr_0 [4:0] $end
+$var wire 5 a io_rvfiRegAddr_1 [4:0] $end
+$var wire 5 b io_rvfiRegAddr_2 [4:0] $end
+$var wire 32 c io_rvfiSInt_0 [31:0] $end
+$var wire 32 d io_rvfiSInt_1 [31:0] $end
+$var wire 32 e io_rvfiSInt_2 [31:0] $end
+$var wire 32 f io_rvfiSInt_3 [31:0] $end
+$var wire 32 g io_rvfiSInt_4 [31:0] $end
+$var wire 32 h io_rvfiUInt_0 [31:0] $end
+$var wire 32 i io_rvfiUInt_1 [31:0] $end
+$var wire 32 j io_rvfiUInt_2 [31:0] $end
+$var wire 32 k io_rvfiUInt_3 [31:0] $end
+$var wire 1 2 reset $end
+$var wire 32 l _T_1 [31:0] $end
+$var reg 32 m clkCycle [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+bx m
+bx l
+bz k
+bz j
+bz i
+bz h
+bz g
+bz f
+bz e
+bz d
+bz c
+bz b
+bz a
+bz `
+bz _
+x^
+bz ]
+1\
+z[
+bz Z
+zY
+bz X
+xW
+1V
+zU
+bz T
+zS
+zR
+bz Q
+bz P
+bz O
+xN
+1M
+bz L
+bz K
+bz J
+bz I
+bz H
+bz G
+bz F
+bz E
+bz D
+bz C
+bz B
+bz A
+z@
+bz ?
+z>
+bz =
+z<
+bz ;
+z:
+bz 9
+z8
+z7
+bz 6
+bz 5
+bz 4
+x3
+12
+bz 1
+bz 0
+bz /
+bz .
+bz -
+bz ,
+bz +
+bz *
+bz )
+bz (
+bz '
+bz &
+z%
+x$
+1#
+x"
+bz !
+$end
+#10
+0M
+0V
+0\
+02
+0#
+#20
+b1 l
+b0 m
+1M
+1V
+1\
+12
+1#
+13
+1N
+1W
+1$
+1"
+#25
+b10 l
+b1 m
+0M
+0V
+0\
+02
+0#
+13
+1N
+1W
+1$
+1"
+#30
+03
+0N
+0W
+0$
+0"
+#35
+b1 l
+b0 m
+13
+1N
+1W
+1$
+1"
+1M
+1V
+1\
+12
+1#
+#40
+13
+1N
+1W
+1$
+1"
+#45
+03
+0N
+0W
+0$
+0"
+#50
+13
+1N
+1W
+1$
+1"
+#55
+03
+0N
+0W
+0$
+0"
+#60
+13
+1N
+1W
+1$
+1"
+#65
+13
+1N
+1W
+1$
+1"
+#70
+03
+0N
+0W
+0$
+0"
+#75
+13
+1N
+1W
+1$
+1"
+#80
+03
+0N
+0W
+0$
+0"
+#85
+13
+1N
+1W
+1$
+1"
